@@ -56,13 +56,19 @@ The workflow of **Pastebin Lite** is designed to securely create, store, and ser
    cd Pastebin_Lite_Aganitha
    ```
 
-2. **Install dependencies**
+2. **Checkout to the branch production**
+
+   ```bash
+    git checkout production
+   ```
+
+3. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-3. **Configure environment variables**
+4. **Configure environment variables**
 
    Create a `.env` file:
 
