@@ -43,7 +43,15 @@ export default async function PastePage({ params }) {
             <span>
               Expires at:{" "}
               <span className="text-zinc-200">
-                {new Date(paste.expires_at).toLocaleString()}
+                {new Date(paste.expires_at).toLocaleString("en-IN", {
+                  timeZone: "Asia/Kolkata",
+                  day: "2-digit",
+                  month: "2-digit",
+                  year: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  hour12: true,
+                })}
               </span>
             </span>
           )}
